@@ -1,0 +1,31 @@
+name: Package TejQuote Pro
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "products/tejquote-pro/**"
+      - ".github/workflows/package-tejquote-pro.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out product
+        uses: actions/checkout@v4
+      - name: Build marketplace package
+        run: |
+          mkdir -p dist/TejQuote-Pro-v1.0
+          cp -R products/tejquote-pro/. dist/TejQuote-Pro-v1.0/
+          cd dist
+          zip -r TejQuote-Pro-v1.0.zip TejQuote-Pro-v1.0
+      - name: Upload sellable package
+        uses: actions/upload-artifact@v4
+        with:
+          name: TejQuote-Pro-v1.0
+          path: dist/TejQuote-Pro-v1.0.zip
+          if-no-files-found: error
