@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="TejQuote Pro">
+  <rect width="512" height="512" rx="112" fill="#0b1829"/>
+  <rect x="72" y="72" width="368" height="368" rx="82" fill="#0d9488"/>
+  <path d="M137 154h238v58h-87v176h-64V212h-87z" fill="#fff"/>
+  <path d="M302 260h73v128h-73z" fill="#dff7f3"/>
+</svg>
