@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f766e" />
+    <meta
+      name="description"
+      content="Try the CheckReport Pro live demo — offline inspection checklists, before-and-after evidence, corrective actions, signatures and printable reports."
+    />
+    <meta property="og:title" content="CheckReport Pro — Live Demo" />
+    <meta property="og:description" content="Create structured inspections with evidence, actions, signatures and printable reports." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tjranawat-dev.github.io/products/checkreport-pro/" />
+    <link rel="canonical" href="https://tjranawat-dev.github.io/products/checkreport-pro/" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <title>CheckReport Pro — Live Demo</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body class="demo-mode">
+    <section class="demo-banner" aria-label="Live demo notice">
+      <div>
+        <strong>LIVE PRODUCT DEMO</strong>
+        <span>Sample data only. Information stays in this browser, but do not enter confidential or legally sensitive information.</span>
+      </div>
+      <button class="demo-reset" id="demoResetButton" type="button">Reset demo data</button>
+    </section>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">
+          <div class="brand-mark">CR</div>
+          <div>
+            <strong>CheckReport Pro</strong>
+            <span>TejMade Digital</span>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <button class="nav-item active" data-page="dashboard">
+            <span>Dashboard</span><b>01</b>
+          </button>
+          <button class="nav-item" data-page="inspections">
+            <span>Inspections</span><b>02</b>
+          </button>
+          <button class="nav-item" data-page="editor">
+            <span>New inspection</span><b>03</b>
+          </button>
+          <button class="nav-item" data-page="templates">
+            <span>Templates</span><b>04</b>
+          </button>
+          <button class="nav-item" data-page="settings">
+            <span>Business settings</span><b>05</b>
+          </button>
+        </nav>
+
+        <div class="privacy-card">
+          <strong>Private by design</strong>
+          <p>Records and photos remain in this browser. No account, tracking or cloud connection.</p>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <button class="menu-button" id="menuButton" aria-label="Open navigation">☰</button>
+            <h1 id="pageTitle">Inspection dashboard</h1>
+            <p id="pageSubtitle">Turn every site visit into organized evidence.</p>
+          </div>
+          <div class="top-actions">
+            <button class="button secondary" id="backupButton">Backup</button>
+            <button class="button primary" id="quickNewButton">New inspection</button>
+          </div>
+        </header>
+
+        <div class="workspace">
+          <section class="page active" id="page-dashboard"></section>
+          <section class="page" id="page-inspections"></section>
+          <section class="page" id="page-editor"></section>
+          <section class="page" id="page-templates"></section>
+          <section class="page" id="page-settings"></section>
+        </div>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <input type="file" id="restoreInput" accept="application/json" hidden />
+    <div id="printRoot" class="print-root" aria-hidden="true"></div>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

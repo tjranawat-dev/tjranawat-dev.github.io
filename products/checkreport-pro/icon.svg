@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="CheckReport Pro">
+  <rect width="512" height="512" rx="112" fill="#071827"/>
+  <rect x="72" y="72" width="368" height="368" rx="82" fill="#0f9488"/>
+  <path d="M151 266l67 67 146-158" fill="none" stroke="#fff" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

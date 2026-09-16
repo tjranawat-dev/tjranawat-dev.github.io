@@ -1,0 +1,17 @@
+{
+  "name": "CheckReport Pro Demo",
+  "short_name": "CheckReport Demo",
+  "description": "Live demo of the offline inspection, checklist and evidence report builder.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f7f8",
+  "theme_color": "#0f766e",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
